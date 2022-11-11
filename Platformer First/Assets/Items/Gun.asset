@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24a00940466ae614483843d191de4423, type: 3}
+  m_Name: Gun
+  m_EditorClassIdentifier: 
+  name: Pew Pew
+  icon: {fileID: -2079331880, guid: e59cea7816ed27c4394163f4739d9390, type: 3}
+  equipSlot: 4
+  equipmentSprite: {fileID: -2079331880, guid: e59cea7816ed27c4394163f4739d9390, type: 3}
+  armorModifier: 0
+  damageModifier: 25
+  inGameItem: {fileID: 882208133537481197, guid: 54dd40282d8a3914a9f7d2e87fabf4a8, type: 3}
