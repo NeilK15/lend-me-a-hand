@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #region Picking Up Items
 
         // Mouse checking for interactable
         Vector3 mousePos = Input.mousePosition;
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
                 Interactable interactable = rayCastHit.collider.gameObject.GetComponent<Interactable>();
                 float distance = Vector2.Distance(transform.position, interactable.transform.position);
                 Color lineColor = Color.red;
-                
+
 
                 if (distance <= interactableDistance)
                 {
@@ -63,10 +64,10 @@ public class PlayerController : MonoBehaviour
                         // Interact with something
                         interactable.Interact();
                     }
-                    
+
 
                 }
-                
+
 
                 if (Input.GetKeyDown(KeyCode.E) && distance > interactableDistance)
                 {
@@ -88,7 +89,12 @@ public class PlayerController : MonoBehaviour
                 OnNotHoverOverInteractabeleCallback.Invoke();
         }
 
+        #endregion
 
+        if (Input.GetButton("Drop"))
+        {
+            EquipmentManager.instance.DropItem();
+        }
 
     }
 }

@@ -10,7 +10,8 @@ public class Inventory : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null) {
+        if (instance != null)
+        {
             Debug.LogWarning("Huh, multiple Inventories???");
             return;
         }
@@ -24,7 +25,7 @@ public class Inventory : MonoBehaviour
 
     public int space = 20;
 
-    public List<Item> items = new List<Item> ();
+    public List<Item> items = new List<Item>();
 
 
     public bool Add(Item item)
@@ -35,7 +36,7 @@ public class Inventory : MonoBehaviour
 
             if (onItemChangedCallback != null)
                 onItemChangedCallback.Invoke();
-            
+
             return true;
         }
         else
@@ -52,5 +53,5 @@ public class Inventory : MonoBehaviour
         if (onItemChangedCallback != null)
             onItemChangedCallback.Invoke();
     }
-    
+
 }

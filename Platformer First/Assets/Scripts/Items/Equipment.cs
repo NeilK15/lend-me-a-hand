@@ -12,6 +12,7 @@ public class Equipment : Item
     public int damageModifier;
 
     public GameObject inGameItem;
+    public GameObject groundObject;
 
     public override bool Use()
     {

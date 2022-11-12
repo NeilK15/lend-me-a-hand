@@ -102,3 +102,5 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 319
   throwablePrefab: {fileID: 369396931176706961, guid: 428137ae2573511438c4cdd1bf3509c6, type: 3}
+  throwPoint: {fileID: 0}
+  throwSpeed: 8

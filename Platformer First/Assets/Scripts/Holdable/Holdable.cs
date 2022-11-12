@@ -11,7 +11,6 @@ public class Holdable : MonoBehaviour
     {
         // MEANT TO BE OVERRIDEN
 
-
     }
 
     public void ShowHoldable()
@@ -21,7 +20,7 @@ public class Holdable : MonoBehaviour
 
 
     }
-    
+
 
 
 }

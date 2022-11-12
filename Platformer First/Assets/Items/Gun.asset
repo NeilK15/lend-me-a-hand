@@ -19,3 +19,4 @@ MonoBehaviour:
   armorModifier: 0
   damageModifier: 25
   inGameItem: {fileID: 882208133537481197, guid: 54dd40282d8a3914a9f7d2e87fabf4a8, type: 3}
+  groundObject: {fileID: 5895194762938493984, guid: 7e05ba7d5496806439ddb47229fff7d9, type: 3}

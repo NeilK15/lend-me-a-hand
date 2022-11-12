@@ -84,17 +84,17 @@ public class EquipmentManager : MonoBehaviour
             inGameObject.transform.position = pickUpPoint.position;
             inGameObject.transform.rotation = pickUpPoint.rotation;
             inGameEquipment[slotIndex] = inGameObject;
-            
+
             return true;
         }
 
-        
+
 
     }
 
     public void UnEquip(Equipment item)
     {
-        int slotIndex = (int) item.equipSlot;
+        int slotIndex = (int)item.equipSlot;
 
         if (inGameEquipment[slotIndex] != null)
         {
@@ -108,6 +108,19 @@ public class EquipmentManager : MonoBehaviour
             OnEquipmentChangeCallback.Invoke();
 
         Debug.Log("Unequipped " + item.name);
+    }
+
+    public void DropItem()
+    {
+        if (inGameEquipment[4] != null)
+        {
+            Equipment toRemove = currentEquipment[4];
+            GameObject droppedItem = Instantiate(toRemove.groundObject, inGameEquipment[4].transform.position, inGameEquipment[4].transform.rotation);
+            droppedItem.transform.parent = null;
+
+            inventory.Remove(toRemove);
+            UnEquip(toRemove);
+        }
     }
 
 }

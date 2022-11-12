@@ -21,13 +21,7 @@ public class ActiveBomb : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x + transform.position.x, Input.mousePosition.y + transform.position.y, 0));
-        mousePos.z = 0;
-
-        Debug.DrawLine(transform.position, mousePos, Color.red, 100000);
-
-        rb.AddForce(mousePos * speed, ForceMode2D.Impulse);
-        Debug.Log(rb.velocity);
+        //rb.velocity = transform.right * speed;
 
         StartCoroutine(StartTimer());
     }
@@ -43,7 +37,7 @@ public class ActiveBomb : MonoBehaviour
 
     private void Explode()
     {
-        
+
         circleCollider.enabled = true;
 
 
@@ -60,7 +54,7 @@ public class ActiveBomb : MonoBehaviour
 
                 if (rb != null)
                 {
-                    rb.AddForce((Vector3.Normalize(colliders[i].transform.position - center.position) * explosionForce * 1/rb.mass) /*+ new Vector3(0, upForce)*/, ForceMode2D.Impulse);
+                    rb.AddForce((Vector3.Normalize(colliders[i].transform.position - center.position) * explosionForce * 1 / rb.mass) /*+ new Vector3(0, upForce)*/, ForceMode2D.Impulse);
                     Debug.Log(colliders[i].transform.position - center.position * explosionForce);
                 }
                 Debug.Log(colliders[i].gameObject.name);

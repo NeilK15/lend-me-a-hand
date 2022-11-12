@@ -16,7 +16,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        zoom = Camera.main.orthographicSize; 
+        zoom = Camera.main.orthographicSize;
     }
 
     // Update is called once per frame
@@ -26,11 +26,11 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = Vector3.Lerp(transform.position, pos, camMoveT);
 
-        
+        //Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
 
         zoom -= zoomSpeed * Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime;
         zoom = Mathf.Clamp(zoom, minZoom, maxZoom);
-        Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, zoom, zoomT);
+        Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, zoom, zoomT * 10);
     }
 
 
