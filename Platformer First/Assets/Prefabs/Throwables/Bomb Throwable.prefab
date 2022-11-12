@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 369396931176706965}
   - component: {fileID: 369396931176706962}
   - component: {fileID: 369396931176706960}
-  - component: {fileID: 369396931176706964}
   - component: {fileID: 369396931176706967}
   - component: {fileID: -4007988930776532055}
+  - component: {fileID: 369396931176706964}
   m_Layer: 6
   m_Name: Bomb Throwable
   m_TagString: Untagged
@@ -110,30 +110,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &369396931176706964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369396931176706961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8db62e1a555e9e48928161e2ed66311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 369396931176706960}
-  timer: 3
-  center: {fileID: 369396931474439324}
-  explosionRadius: 2
-  circleCollider: {fileID: 369396931176706967}
-  upForce: 5
-  speed: 10
-  explosionEffect: {fileID: 2944612285670294810, guid: 7941a2ddc608f134199b0097592c0a91, type: 3}
-  explosionForce: 20
-  explosionLayerMask:
-    serializedVersion: 2
-    m_Bits: 2147483647
 --- !u!58 &369396931176706967
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -166,6 +142,31 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0948968, y: -0.003647041}
   m_Size: {x: 0.37500006, y: 0.28335312}
   m_Direction: 1
+--- !u!114 &369396931176706964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369396931176706961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8db62e1a555e9e48928161e2ed66311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 369396931176706960}
+  timer: 3
+  center: {fileID: 369396931474439324}
+  explosionRadius: 2
+  circleCollider: {fileID: 369396931176706967}
+  upForce: 5
+  speed: 10
+  explosionEffect: {fileID: 2944612285670294810, guid: 7941a2ddc608f134199b0097592c0a91, type: 3}
+  explosionForce: 20
+  explosionLayerMask:
+    serializedVersion: 2
+    m_Bits: 447
+  bombItem: {fileID: 11400000, guid: e53a6a0793f6c5a4888a059812197eec, type: 2}
 --- !u!1 &369396931474439325
 GameObject:
   m_ObjectHideFlags: 0

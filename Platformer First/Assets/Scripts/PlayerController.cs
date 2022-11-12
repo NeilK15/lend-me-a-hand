@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         // Mouse checking for interactable
         Vector3 mousePos = Input.mousePosition;
 
-        RaycastHit2D rayCastHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, pickupMask);
+        RaycastHit2D rayCastHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, Mathf.Infinity, pickupMask);
         Debug.DrawRay(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, Color.yellow);
         if (rayCastHit.collider != null)
         {
