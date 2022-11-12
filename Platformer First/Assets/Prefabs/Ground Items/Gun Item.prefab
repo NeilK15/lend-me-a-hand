@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5895194762938493986}
   - component: {fileID: 5895194762938493985}
-  - component: {fileID: 5895194762938494013}
-  - component: {fileID: 5895194762938494012}
   - component: {fileID: 5895194762938493987}
+  - component: {fileID: 2394167740325669019}
+  - component: {fileID: 3370980466142995605}
   m_Layer: 6
   m_Name: Gun Item
   m_TagString: Untagged
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1622215861
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2079331880, guid: e59cea7816ed27c4394163f4739d9390, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -87,8 +87,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5895194762938494013
-BoxCollider2D:
+--- !u!50 &5895194762938493987
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5895194762938493984}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1.5
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!60 &2394167740325669019
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96,11 +117,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 5895194762938493984}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6d05fe03e234f524db5500f63c4f3bb3, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.104186654, y: 0.038698077}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.22216892, y: 0.32309452}
@@ -110,10 +131,15 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.375, y: 0.21875}
-  m_EdgeRadius: 0
---- !u!114 &5895194762938494012
+  m_Points:
+    m_Paths:
+    - - {x: -0.083313346, y: 0.14807308}
+      - {x: -0.083313346, y: -0.07067692}
+      - {x: 0.011955142, y: -0.06969136}
+      - {x: 0.13341248, y: 0.052336216}
+      - {x: 0.29257715, y: 0.054162145}
+      - {x: 0.29168665, y: 0.14807308}
+--- !u!114 &3370980466142995605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,24 +153,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
   item: {fileID: 11400000, guid: a2f733c057595f84598e399a1bc9790a, type: 2}
---- !u!50 &5895194762938493987
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5895194762938493984}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0

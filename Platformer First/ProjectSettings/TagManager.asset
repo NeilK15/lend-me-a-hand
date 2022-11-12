@@ -46,6 +46,12 @@ TagManager:
   - name: Holdables
     uniqueID: 18973979
     locked: 0
+  - name: Enemies
+    uniqueID: 2994443235
+    locked: 0
   - name: Player
     uniqueID: 313029871
+    locked: 0
+  - name: Ground Items
+    uniqueID: 1622215861
     locked: 0

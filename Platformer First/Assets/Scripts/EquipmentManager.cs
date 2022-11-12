@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class EquipmentManager : MonoBehaviour
@@ -43,6 +42,9 @@ public class EquipmentManager : MonoBehaviour
 
     private void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
         if (Input.GetButtonDown("Fire1"))
         {
 

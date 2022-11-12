@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,6 +6,7 @@ public class PlayerController : MonoBehaviour
     #region Singleton
 
     public static PlayerController instance;
+    public LayerMask pickupMask;
 
     private void Awake()
     {
@@ -36,12 +36,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
+
         #region Picking Up Items
 
         // Mouse checking for interactable
         Vector3 mousePos = Input.mousePosition;
 
-        RaycastHit2D rayCastHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero);
+        RaycastHit2D rayCastHit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, pickupMask);
         Debug.DrawRay(Camera.main.ScreenToWorldPoint(mousePos), Vector2.zero, Color.yellow);
         if (rayCastHit.collider != null)
         {

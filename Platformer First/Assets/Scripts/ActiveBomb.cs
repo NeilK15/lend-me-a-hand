@@ -54,7 +54,7 @@ public class ActiveBomb : MonoBehaviour
 
                 if (rb != null)
                 {
-                    rb.AddForce((Vector3.Normalize(colliders[i].transform.position - center.position) * explosionForce * 1 / rb.mass) /*+ new Vector3(0, upForce)*/, ForceMode2D.Impulse);
+                    rb.AddForce((Vector3.Normalize(colliders[i].transform.position - center.position) * explosionForce * 1 / rb.mass * 1 / Vector3.Distance(colliders[i].transform.position, center.position)) /*+ new Vector3(0, upForce)*/, ForceMode2D.Impulse);
                     Debug.Log(colliders[i].transform.position - center.position * explosionForce);
                 }
                 Debug.Log(colliders[i].gameObject.name);
