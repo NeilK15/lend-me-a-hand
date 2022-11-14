@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Platformer First/Assets/URP Asset.asset.meta
+guid: cc2ef1478bcc19249b11e12816138535
+========
+guid: 1df0746b94f48104fbdb1c7784b2e1d7
+>>>>>>>> parent of 795bb83 (HDRP!):Platformer First/Assets/PipelineAsset.asset.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
