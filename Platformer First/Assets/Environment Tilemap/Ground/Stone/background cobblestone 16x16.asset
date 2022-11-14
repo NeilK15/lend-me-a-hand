@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: cobblestone 16x16
+  m_Name: background cobblestone 16x16
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 47074d2aa5bc63e4faa689391898b31a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 661abfdbfcc2ff144a2a54fbc5cc0fa9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

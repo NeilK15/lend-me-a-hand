@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float speed = 10f;
-    public float maxSpeed = 1.5f;
     public float jumpForce = 5f;
     public LayerMask groundMask;
     public float extraHeightTest = 0.01f;
@@ -17,7 +16,6 @@ public class PlayerMovement : MonoBehaviour
     public Transform stepUpLimit;
     public float stepUpDistance = 1f;
     public float stepUpHeight = 0.3f;
-    public float limitErrorCorrection = 0.05f;
 
     private bool grounded = true;
     private Animator anim;
@@ -26,11 +24,6 @@ public class PlayerMovement : MonoBehaviour
     new private BoxCollider2D collider;
     private float horizontal;
 
-    public bool blockStatus;
-    public bool limitStatus;
-
-    RaycastHit2D block;
-    RaycastHit2D limit;
 
     public Transform pickUpSpot;
 
@@ -45,26 +38,18 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        grounded = IsGrounded();
+        grounded = isGrounded();
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
             Jump();
         }
-
-        block = Physics2D.Raycast(stepUpPosition.transform.position, transform.right, stepUpDistance, groundMask);
-        limit = Physics2D.Raycast(stepUpLimit.transform.position, transform.right, stepUpDistance + limitErrorCorrection, groundMask);
-
-        blockStatus = !block;
-        limitStatus = !limit;
     }
 
     private void FixedUpdate()
     {
         Walk();
-        Friction();
-
         StepUp();
     }
 
@@ -87,18 +72,13 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        if (grounded && horizontal != 0 && !block)
+        if (grounded && horizontal != 0)
         {
             anim.SetBool("walking", true);
         }
 
-        if (horizontal != 0 && !block)
-        {
-            rb.velocity += (new Vector2(horizontal * speed * Time.deltaTime, 0));
-            rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), rb.velocity.y);
-
-            //rb.velocity = new Vector2(horizontal * speed * Time.deltaTime, rb.velocity.y + 0.003f);
-        }
+        if (horizontal != 0)
+            rb.velocity = new Vector2(horizontal * speed * Time.deltaTime, rb.velocity.y);
     }
 
     private void Jump()
@@ -106,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 
-    private bool IsGrounded()
+    private bool isGrounded()
     {
         RaycastHit2D ray = Physics2D.Raycast(collider.bounds.center, Vector2.down, collider.bounds.extents.y + extraHeightTest, groundMask);
         Color rayColor;
@@ -124,12 +104,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void StepUp()
     {
-        
+        RaycastHit2D block = Physics2D.Raycast(stepUpPosition.transform.position, transform.right, stepUpDistance, groundMask);
+
+        RaycastHit2D limit = Physics2D.Raycast(stepUpLimit.transform.position, transform.right, stepUpDistance + 0.5f, groundMask);
 
 
 
         Color rayColor;
-        if (block.collider != null && limit == false && grounded)
+        if (block.collider != null && limit == false)
         {
             rayColor = Color.green;
             transform.position = new Vector2(transform.position.x, transform.position.y + stepUpHeight);
@@ -139,22 +121,7 @@ public class PlayerMovement : MonoBehaviour
             rayColor = Color.red;
         }
         Debug.DrawRay(stepUpPosition.transform.position, transform.right * stepUpDistance, rayColor);
-        Debug.DrawRay(stepUpLimit.transform.position, transform.right * (stepUpDistance + limitErrorCorrection), rayColor);
-
-    }
-
-    public void Friction()
-    {
-
-        if (horizontal == 0)
-        {
-            if (rb.velocity.x > 0.0000001f)
-                Debug.Log(rb.velocity);
-            //rb.velocity = new Vector2 (0, rb.velocity.y);
-        }
-
-
-
+        Debug.DrawRay(stepUpLimit.transform.position, transform.right * stepUpDistance, Color.gray);
 
     }
 }
