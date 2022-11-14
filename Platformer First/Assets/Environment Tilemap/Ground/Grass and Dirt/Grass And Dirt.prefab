@@ -48,7 +48,11 @@ Tilemap:
       m_TileIndex: 10
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_TileSpriteIndex: 14
+=======
+      m_TileSpriteIndex: 10
+>>>>>>> parent of dd54989 (Before URP)
 =======
       m_TileSpriteIndex: 10
 >>>>>>> parent of dd54989 (Before URP)
@@ -82,6 +86,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 4, y: 3, z: 0}
     second:
       serializedVersion: 2
@@ -102,6 +107,8 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+=======
+>>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
 =======
@@ -236,6 +243,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 4bff070b36fa31548a448d0d85f26de1, type: 2}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 19079b0f5dadd604a8bc243568a9c05a, type: 2}
   - m_RefCount: 1
@@ -244,6 +252,10 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 661abfdbfcc2ff144a2a54fbc5cc0fa9, type: 3}
   - m_RefCount: 1
+=======
+  m_TileSpriteArray:
+  - m_RefCount: 1
+>>>>>>> parent of dd54989 (Before URP)
 =======
   m_TileSpriteArray:
   - m_RefCount: 1
@@ -274,6 +286,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1551464712, guid: 68d200b6dce14be4ea3ca429f8e43296, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 47074d2aa5bc63e4faa689391898b31a, type: 3}
   - m_RefCount: 1
@@ -290,12 +303,17 @@ Tilemap:
   - m_RefCount: 13
 >>>>>>> parent of dd54989 (Before URP)
 =======
+=======
+>>>>>>> parent of dd54989 (Before URP)
   - m_RefCount: 1
     m_Data: {fileID: -437334916, guid: 68d200b6dce14be4ea3ca429f8e43296, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -758663385, guid: 68d200b6dce14be4ea3ca429f8e43296, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 13
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
     m_Data:
       e00: 1
@@ -333,7 +351,11 @@ Tilemap:
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 15
+=======
+  - m_RefCount: 13
+>>>>>>> parent of dd54989 (Before URP)
 =======
   - m_RefCount: 13
 >>>>>>> parent of dd54989 (Before URP)
@@ -461,7 +483,11 @@ Grid:
   m_CellSwizzle: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1388399936216597050
+=======
+--- !u!114 &8160496271475920858
+>>>>>>> parent of dd54989 (Before URP)
 =======
 --- !u!114 &8160496271475920858
 >>>>>>> parent of dd54989 (Before URP)

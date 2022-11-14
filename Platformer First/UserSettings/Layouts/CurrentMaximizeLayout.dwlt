@@ -21,12 +21,21 @@ MonoBehaviour:
     y: 30
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1920
     height: 939
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
   controlID: 25067
+=======
+    width: 1440
+    height: 797
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
+  vertical: 0
+  controlID: 2906
+>>>>>>> parent of dd54989 (Before URP)
 =======
     width: 1440
     height: 797
@@ -65,6 +74,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 348
     y: 73
     width: 1162
@@ -72,11 +82,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of dd54989 (Before URP)
+=======
+>>>>>>> parent of dd54989 (Before URP)
     x: 261
     y: 83
     width: 873
     height: 511
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
@@ -92,7 +107,11 @@ MonoBehaviour:
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 889, y: 500}
+=======
+  m_TargetSize: {x: 871, y: 490}
+>>>>>>> parent of dd54989 (Before URP)
 =======
   m_TargetSize: {x: 871, y: 490}
 >>>>>>> parent of dd54989 (Before URP)
@@ -115,6 +134,7 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -444.5
     m_HBaseRangeMax: 444.5
     m_VBaseRangeMin: -250
@@ -122,11 +142,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of dd54989 (Before URP)
+=======
+>>>>>>> parent of dd54989 (Before URP)
     m_HBaseRangeMin: -217.75
     m_HBaseRangeMax: 217.75
     m_VBaseRangeMin: -122.5
     m_VBaseRangeMax: 122.5
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
@@ -149,6 +174,7 @@ MonoBehaviour:
       y: 21
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 1162
       height: 500
     m_Scale: {x: 1, y: 1}
@@ -156,11 +182,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of dd54989 (Before URP)
+=======
+>>>>>>> parent of dd54989 (Before URP)
       width: 873
       height: 490
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 436.5, y: 245}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
@@ -172,6 +203,7 @@ MonoBehaviour:
       serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -581
       y: -250
       width: 1162
@@ -179,6 +211,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1162, y: 521}
+=======
+      x: -218.25
+      y: -122.5
+      width: 436.5
+      height: 245
+    m_MinimalGUI: 1
+  m_defaultScale: 2
+  m_LastWindowPixelSize: {x: 1746, y: 1022}
+>>>>>>> parent of dd54989 (Before URP)
 =======
       x: -218.25
       y: -122.5
@@ -223,12 +264,21 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1512
     height: 939
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 0
   controlID: 25068
+=======
+    width: 1136
+    height: 797
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 0
+  controlID: 2907
+>>>>>>> parent of dd54989 (Before URP)
 =======
     width: 1136
     height: 797
@@ -266,12 +316,21 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 348
     height: 939
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
   controlID: 25128
+=======
+    width: 261
+    height: 797
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 2969
+>>>>>>> parent of dd54989 (Before URP)
 =======
     width: 261
     height: 797
@@ -307,8 +366,13 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 348
     height: 456
+=======
+    width: 261
+    height: 453
+>>>>>>> parent of dd54989 (Before URP)
 =======
     width: 261
     height: 453
@@ -347,9 +411,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 73
     width: 347
     height: 435
+=======
+    y: 83
+    width: 260
+    height: 432
+>>>>>>> parent of dd54989 (Before URP)
 =======
     y: 83
     width: 260
@@ -369,9 +439,15 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 0ccb0100
       m_LastClickedID: 0
       m_ExpandedIDs: a2dbfdff1cdcfdffcedcfdffd4dcfdffdcdcfdff1edefdff1abcfeff10f9ffff7afaffff187300009e730000ee7f0100
+=======
+      m_SelectedIDs: 026d0000
+      m_LastClickedID: 27906
+      m_ExpandedIDs: 2cfbffff026d0000
+>>>>>>> parent of dd54989 (Before URP)
 =======
       m_SelectedIDs: 026d0000
       m_LastClickedID: 27906
@@ -423,9 +499,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 456
     width: 348
     height: 483
+=======
+    y: 453
+    width: 261
+    height: 344
+>>>>>>> parent of dd54989 (Before URP)
 =======
     y: 453
     width: 261
@@ -466,9 +548,15 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 529
     width: 347
     height: 462
+=======
+    y: 536
+    width: 260
+    height: 323
+>>>>>>> parent of dd54989 (Before URP)
 =======
     y: 536
     width: 260
@@ -498,7 +586,11 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Sprites/Environment
+=======
+    - Assets/Scripts/Characters
+>>>>>>> parent of dd54989 (Before URP)
 =======
     - Assets/Scripts/Characters
 >>>>>>> parent of dd54989 (Before URP)
@@ -521,7 +613,11 @@ MonoBehaviour:
     m_LastClickedID: 31446
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 92c4feffffffffff00000000f66f0000f86f0000387000003c700000447000004670000048700000c272000082790000ee7e00003efb0000b6550100
+=======
+    m_ExpandedIDs: ffffffff00000000206f0000226f0000246f0000266f0000286f00002a6f00002c6f00002e6f0000306f0000326f0000346f0000366f0000
+>>>>>>> parent of dd54989 (Before URP)
 =======
     m_ExpandedIDs: ffffffff00000000206f0000226f0000246f0000266f0000286f00002a6f00002c6f00002e6f0000306f0000326f0000346f0000366f0000
 >>>>>>> parent of dd54989 (Before URP)
@@ -554,6 +650,7 @@ MonoBehaviour:
   m_AssetTreeState:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 480}
     m_SelectedIDs: 0ccb0100
     m_LastClickedID: 117516
@@ -561,11 +658,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of dd54989 (Before URP)
+=======
+>>>>>>> parent of dd54989 (Before URP)
     scrollPos: {x: 0, y: 554.8183}
     m_SelectedIDs: 026d0000
     m_LastClickedID: 0
     m_ExpandedIDs: ffffffff00000000206f0000226f0000246f0000266f0000286f00002a6f0000306f0000326f0000346f000028710000de8600001aa70000
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
@@ -595,10 +697,13 @@ MonoBehaviour:
   m_ListAreaState:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 0ccb0100
     m_LastClickedInstanceID: 117516
     m_HadKeyboardFocusLastEvent: 1
 =======
+=======
+>>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
     m_SelectedInstanceIDs: 026d0000
@@ -652,6 +757,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 348
     y: 0
     width: 1164
@@ -660,6 +766,16 @@ MonoBehaviour:
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
   controlID: 25069
+=======
+    x: 261
+    y: 0
+    width: 875
+    height: 797
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 2908
+>>>>>>> parent of dd54989 (Before URP)
 =======
     x: 261
     y: 0
@@ -699,8 +815,13 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1164
     height: 542
+=======
+    width: 875
+    height: 532
+>>>>>>> parent of dd54989 (Before URP)
 =======
     width: 875
     height: 532
@@ -741,6 +862,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 348
     y: 73
     width: 1162
@@ -748,11 +870,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of dd54989 (Before URP)
+=======
+>>>>>>> parent of dd54989 (Before URP)
     x: 261
     y: 83
     width: 873
     height: 511
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
@@ -981,9 +1108,15 @@ MonoBehaviour:
   m_Position:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -2.9270248, y: -0.49106392, z: -0.00592385}
     speed: 2
     m_Value: {x: -2.9323785, y: -0.5421472, z: -0.0070280605}
+=======
+    m_Target: {x: 0.1320372, y: 0.8202244, z: -0.017832067}
+    speed: 2
+    m_Value: {x: 0.1320372, y: 0.8202244, z: -0.017832067}
+>>>>>>> parent of dd54989 (Before URP)
 =======
     m_Target: {x: 0.1320372, y: 0.8202244, z: -0.017832067}
     speed: 2
@@ -1046,9 +1179,15 @@ MonoBehaviour:
   m_Size:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 2.343361
     speed: 2
     m_Value: 2.4537811
+=======
+    m_Target: 2.324856
+    speed: 2
+    m_Value: 2.324856
+>>>>>>> parent of dd54989 (Before URP)
 =======
     m_Target: 2.324856
     speed: 2
@@ -1793,6 +1932,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 542
     width: 1164
     height: 397
@@ -1800,6 +1940,8 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
 =======
+=======
+>>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
     y: 532
@@ -1835,6 +1977,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 348
     y: 615
     width: 1162
@@ -1842,11 +1985,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of dd54989 (Before URP)
+=======
+>>>>>>> parent of dd54989 (Before URP)
     x: 261
     y: 615
     width: 873
     height: 244
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
@@ -1871,6 +2019,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1512
     y: 0
     width: 408
@@ -1879,6 +2028,10 @@ MonoBehaviour:
 =======
     x: 1136
     y: 0
+=======
+    x: 1136
+    y: 0
+>>>>>>> parent of dd54989 (Before URP)
 =======
     x: 1136
     y: 0
@@ -1916,6 +2069,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1512
     y: 73
     width: 407
@@ -1923,11 +2077,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of dd54989 (Before URP)
+=======
+>>>>>>> parent of dd54989 (Before URP)
     x: 1136
     y: 83
     width: 303
     height: 776
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of dd54989 (Before URP)
+=======
 >>>>>>> parent of dd54989 (Before URP)
 =======
 >>>>>>> parent of dd54989 (Before URP)
@@ -1944,7 +2103,11 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastVerticalScrollValue: 0
+=======
+  m_LastVerticalScrollValue: 484
+>>>>>>> parent of dd54989 (Before URP)
 =======
   m_LastVerticalScrollValue: 484
 >>>>>>> parent of dd54989 (Before URP)
