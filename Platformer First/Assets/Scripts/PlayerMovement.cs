@@ -6,12 +6,14 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerMovement : MonoBehaviour
 {
-
+    [Header("Movement Info")]
     public float speed = 10f;
     public float jumpForce = 5f;
     public LayerMask groundMask;
     public float extraHeightTest = 0.01f;
+    public float groundDrag = 2f;
 
+    [Header("Step Up References and Info")]
     public Transform stepUpPosition;
     public Transform stepUpLimit;
     public float stepUpDistance = 1f;
@@ -44,6 +46,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && grounded)
         {
             Jump();
+        }
+
+        if (grounded) {
+            rb.drag = groundDrag;
+        } else
+        {
+            rb.drag = 0;
         }
     }
 

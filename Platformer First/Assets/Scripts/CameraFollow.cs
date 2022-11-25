@@ -12,7 +12,9 @@ public class CameraFollow : MonoBehaviour
     public float minZoom = 1;
     public float maxZoom = 5;
     public float zoomT = 5;
-    public float zoom;
+
+
+    private float zoom;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,7 @@ public class CameraFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Vector3 pos = new Vector3(player.position.x + cameraOffset.x, player.position.y + cameraOffset.y, transform.position.z);
 
@@ -30,7 +32,7 @@ public class CameraFollow : MonoBehaviour
 
         zoom -= zoomSpeed * Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime;
         zoom = Mathf.Clamp(zoom, minZoom, maxZoom);
-        Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, zoom, zoomT * 10);
+        Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, zoom, zoomT);
     }
 
 
