@@ -26,7 +26,7 @@ public class EquipmentManager : MonoBehaviour
     public Transform pickUpPoint;
 
     Inventory inventory;
-
+    public Equipment _staff;
     public delegate void OnEquipmentChange();
     public OnEquipmentChange OnEquipmentChangeCallback;
 
@@ -37,19 +37,24 @@ public class EquipmentManager : MonoBehaviour
 
         currentEquipment = new Equipment[numberOfSlots];
         inGameEquipment = new GameObject[numberOfSlots];
+        Equip(_staff);
     }
 
 
     private void Update()
     {
+        
+        /*
         if (EventSystem.current.IsPointerOverGameObject())
             return;
+            */
 
         if (Input.GetButtonDown("Fire1"))
         {
+        print("Here");
 
             // SHOOT RAY IN DIRECTION OF CLICK
-
+            
             if (inGameEquipment[4] != null)
             {
                 Holdable holdable = inGameEquipment[4].GetComponent<Holdable>();
@@ -78,15 +83,18 @@ public class EquipmentManager : MonoBehaviour
             Debug.Log("Equipped " + newItem.name);
             currentEquipment[slotIndex] = newItem;
 
-            if (OnEquipmentChangeCallback != null)
-                OnEquipmentChangeCallback.Invoke();
+            
 
             GameObject inGameObject = Instantiate(newItem.inGameItem);
             inGameObject.transform.parent = this.pickUpPoint.transform;
             inGameObject.transform.position = pickUpPoint.position;
             inGameObject.transform.rotation = pickUpPoint.rotation;
             inGameEquipment[slotIndex] = inGameObject;
-
+            
+            if (OnEquipmentChangeCallback != null)
+                            OnEquipmentChangeCallback.Invoke();
+            
+            
             return true;
         }
 

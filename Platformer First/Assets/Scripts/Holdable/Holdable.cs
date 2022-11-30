@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,7 @@ public class Holdable : MonoBehaviour
     public virtual void UseHoldable()
     {
         // MEANT TO BE OVERRIDEN
-
+        print("Using " + equipment.name);
     }
 
     public void ShowHoldable()
