@@ -4,12 +4,17 @@ using UnityEngine;using UnityEngine.Rendering.Universal.Internal;
 
 public class Staff : Weapon
 {
+    [Header("References")]
     public State _weaponState;
+
+    public Transform spawnPoint;
+
+    public GameObject fireBall;
     
     // Start is called before the first frame update
     void Start()
     {
-        _weaponState = State.Idle;
+        _weaponState = State.Fire;
     }
 
     public override void UseHoldable()
@@ -27,6 +32,7 @@ public class Staff : Weapon
                 break;
             case(State.Fire):
                 print("Staff is on Fire?");
+                Instantiate(fireBall, spawnPoint.position, Quaternion.identity);
                 break;
         }
     }

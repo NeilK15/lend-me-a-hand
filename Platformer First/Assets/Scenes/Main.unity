@@ -461,7 +461,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: -0.98
+  near clip plane: 3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1946965504}
   camMoveT: 0.06
-  cameraOffset: {x: 0, y: 0.8}
+  cameraOffset: {x: 0, y: 0.2}
   zoomSpeed: 500
   minZoom: 0.5
   maxZoom: 2
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 1684773131}
   m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29734,24 +29734,24 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &2776300868215370105
+--- !u!1001 &2085371720
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 799640566, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
-      propertyPath: main
-      value: 
-      objectReference: {fileID: 698183641}
-    - target: {fileID: 799640566, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
-      propertyPath: speed
+    - target: {fileID: 31156456849749557, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563740370289468266, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 799640566, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
-      propertyPath: rotationSpeed
-      value: 69.95
+    - target: {fileID: 5803717987456847884, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5803717987456847885, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
       propertyPath: m_RootOrder
@@ -29759,11 +29759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5803717987456847885, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.542
+      value: 0.892
       objectReference: {fileID: 0}
     - target: {fileID: 5803717987456847885, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.066
+      value: 0.307
       objectReference: {fileID: 0}
     - target: {fileID: 5803717987456847885, guid: 1fe4f12abf035a948a3633c964d9618e, type: 3}
       propertyPath: m_LocalPosition.z
