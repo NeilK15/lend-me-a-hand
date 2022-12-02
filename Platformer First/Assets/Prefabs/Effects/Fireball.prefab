@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 799640564}
   - component: {fileID: 799640565}
   - component: {fileID: 799640566}
+  - component: {fileID: 8039285558499827555}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -3728,8 +3729,8 @@ ParticleSystem:
   CollisionModule:
     enabled: 0
     serializedVersion: 4
-    type: 0
-    collisionMode: 0
+    type: 1
+    collisionMode: 1
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
@@ -3909,13 +3910,14 @@ ParticleSystem:
   TriggerModule:
     enabled: 0
     serializedVersion: 2
-    inside: 1
+    inside: 0
     outside: 0
     enter: 0
     exit: 0
-    colliderQueryMode: 0
+    colliderQueryMode: 1
     radiusScale: 1
-    primitives: []
+    primitives:
+    - {fileID: 5205409407040841653, guid: 84017d841253f6d4ea724b64ff53605f, type: 3}
   SubModule:
     serializedVersion: 2
     enabled: 0
@@ -4894,7 +4896,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1622215861
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -4949,7 +4951,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 5803717987456847890}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -4980,4 +4982,23 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 8
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
   fireBallExplosion: {fileID: 8294240951901592721, guid: 339b564a97ef2a54f88a5766b0472a78, type: 3}
+--- !u!58 &8039285558499827555
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803717987456847890}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.096477695

@@ -2,19 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, IDamageable
 {
-
+    
     public float health = 100;
 
-
     public GameObject deathEffect;
-
-
-    // Maybe change type to bool to confirm kill
-    public void Damage(float hitpoints)
+    public virtual void Damage(float damage)
     {
-        health -= hitpoints;
+        health -= damage;
         if (health <= 0)
             Kill();
     }

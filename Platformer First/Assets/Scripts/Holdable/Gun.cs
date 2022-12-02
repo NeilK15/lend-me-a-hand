@@ -24,7 +24,7 @@ public class Gun : Weapon
 
         if (hitInfo)
         {
-            Enemy enemy = hitInfo.transform.GetComponent<Enemy>();
+            IDamageable enemy = hitInfo.transform.GetComponent<IDamageable>();
 
             if (enemy != null)
                 enemy.Damage(equipment.damageModifier);

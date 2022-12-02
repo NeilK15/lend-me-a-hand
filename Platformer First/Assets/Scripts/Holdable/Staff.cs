@@ -32,7 +32,8 @@ public class Staff : Weapon
                 break;
             case(State.Fire):
                 print("Staff is on Fire?");
-                Instantiate(fireBall, spawnPoint.position, Quaternion.identity);
+                GameObject pitbull = Instantiate(fireBall, spawnPoint.position, Quaternion.identity);
+                pitbull.GetComponent<Fireball>().Damage = equipment.damageModifier;
                 break;
         }
     }

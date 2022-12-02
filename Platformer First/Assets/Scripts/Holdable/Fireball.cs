@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Data;
 using System.Security.Cryptography;
 using UnityEngine;
@@ -13,20 +14,33 @@ public class Fireball : MonoBehaviour
     public float secondsUntilKill = 5f;
     public float radius = 2f;
     public LayerMask groundLayerMask;
+    public LayerMask enemyLayerMask;
     public GameObject fireBallExplosion;
+    
+    private float _damage;
+    
+    public float Damage
+    {
+        get { return _damage; }
+        set { _damage = value; }
+    }
 
     private bool _shouldFollowMouse;
     private Vector2 _lastPosition;
     private Vector2 _mousePos;
+    private ParticleSystem ps;
     
 
     private void Start()
     {
         // Initialize boolean and start coroutine to kill fireball
         _shouldFollowMouse = true;
-        GetComponent<ParticleSystem>().Play();
+        ps = GetComponent<ParticleSystem>();
+        ps.Play();
         StartCoroutine(FollowMouse(controlSeconds));
     }
+    
+    
 
     private void Update()
     {
@@ -38,6 +52,8 @@ public class Fireball : MonoBehaviour
         
         CheckCollisions();
     }
+    
+    
 
     private void FixedUpdate()
     {
@@ -78,10 +94,18 @@ public class Fireball : MonoBehaviour
 
     private void CheckCollisions()
     {
-        Collider2D collider = Physics2D.OverlapCircle(transform.position, radius, groundLayerMask);
-        if (collider != null) {
-            print(collider.name);
+        Collider2D ground = Physics2D.OverlapCircle(transform.position, radius, groundLayerMask);
+        if (ground != null) {
             Death();
+        }
+        
+        Collider2D enemy = Physics2D.OverlapCircle(transform.position, radius, enemyLayerMask);
+        if (enemy != null)
+        {
+            IDamageable damageable = enemy.GetComponent<IDamageable>();
+            if (damageable != null)
+                damageable.Damage(_damage);
+
         }
     }
 
@@ -89,4 +113,5 @@ public class Fireball : MonoBehaviour
     {
         Gizmos.DrawSphere(transform.position, radius);
     }
+    
 }
