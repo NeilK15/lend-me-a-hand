@@ -4975,7 +4975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 799640565}
-  speed: 6
+  speed: 3.82
   controlSeconds: 3
   secondsUntilKill: 1
   radius: 0.008

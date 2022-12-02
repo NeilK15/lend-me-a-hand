@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform stepUpLimit;
     public float stepUpDistance = 1f;
     public float stepUpHeight = 0.3f;
+    public float stepOverLength = 0.15f;
 
     private bool grounded = true;
     private Animator anim;
@@ -73,12 +74,14 @@ public class PlayerMovement : MonoBehaviour
             //spriteRenderer.flipX = true;
             //transform.localScale = new Vector3(-1, 1, 1);
             transform.rotation = Quaternion.Euler(0, 180, 0);
+            stepOverLength = -Mathf.Abs(stepOverLength);
         }
         else if (horizontal > 0)
         {
             //spriteRenderer.flipX = false;
             //transform.localScale = new Vector3(1, 1, 1);
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            stepOverLength = Mathf.Abs(stepOverLength);
         }
 
         if (grounded && horizontal != 0)
@@ -115,15 +118,15 @@ public class PlayerMovement : MonoBehaviour
     {
         RaycastHit2D block = Physics2D.Raycast(stepUpPosition.transform.position, transform.right, stepUpDistance, groundMask);
 
-        RaycastHit2D limit = Physics2D.Raycast(stepUpLimit.transform.position, transform.right, stepUpDistance + 0.5f, groundMask);
+        RaycastHit2D limit = Physics2D.Raycast(stepUpLimit.transform.position, transform.right, stepUpDistance + 0.01f, groundMask);
 
 
 
         Color rayColor;
-        if (block.collider != null && limit == false)
+        if (block.collider != null && limit == false && grounded)
         {
             rayColor = Color.green;
-            transform.position = new Vector2(transform.position.x, transform.position.y + stepUpHeight);
+            transform.position = new Vector2(transform.position.x + stepOverLength, transform.position.y + stepUpHeight);
         }
         else
         {
