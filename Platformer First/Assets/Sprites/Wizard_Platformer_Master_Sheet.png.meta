@@ -116,27 +116,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wizard_Platformer_Master_Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1703670dbed8763429937a3090dfa274
-      internalID: -1342870315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Wall_Torch_1
       rect:
         serializedVersion: 2
@@ -200,11 +179,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ground_Cobble
+      name: Background_Cobblestone
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 48
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -214,17 +193,227 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96096cb2223056649b504224f5b25f40
-      internalID: 636310101
+      spriteID: b3f8dcce4ce8ec24391770755d90c068
+      internalID: 78032553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wizard_Platformer_Master_Sheet_5
+      name: Ground_Stone_Bricks
       rect:
         serializedVersion: 2
         x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65f2d99ba6e0a14184fae667e748cd3
+      internalID: -1398223905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Torch_
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d534982c0037b4b4180821610ea93b1d
+      internalID: -52271244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Torch_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127ffe71ee4e497449f84dec4c63200c
+      internalID: 1698778387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Torch_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ff785693aa1a2408e5e595220f7bb4
+      internalID: 1232783092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Torch_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8215666a89b13438624fb6825de995
+      internalID: 1841059504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall_Torch_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802049ef6aee59247a835ed16eecb410
+      internalID: -222078469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_Closed
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3223b48a71435834099f94faf0c4f711
+      internalID: 173721487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest_Opened
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707c2b8214dcc6f4388d91f345aa4d78
+      internalID: 1846950345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Right_Closed
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ac5ae53c5ef7c47b6f7289b7030a9c
+      internalID: 1196373299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Right_Open
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d384c5885dae2446a63306d40507fbe
+      internalID: -74000182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Left_Open
+      rect:
+        serializedVersion: 2
+        x: 208
         y: 16
         width: 16
         height: 16
@@ -235,8 +424,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 075277223ea197147a41f24c15817da1
-      internalID: -1455132543
+      spriteID: 76f9926f663f6584999166a2a608bd5b
+      internalID: 2101552074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Left_Closed
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29604a5c976ebcb46be384fdb34c9000
+      internalID: -683710346
       vertices: []
       indices: 
       edges: []
@@ -252,12 +462,62 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ground_Cobble: 636310101
-      Wall_Torch_1: 2144157432
-      Wall_Torch_2: -428580357
-      Wizard_Platformer_Master_Sheet_0: -1342870315
-      Wizard_Platformer_Master_Sheet_5: -1455132543
-      Wall_Torch_3: 1500335706
+      Wizard_Platformer_Master_Sheet_12: 1407562160
+      Door_Right_Open: -74000182
+      Wizard_Platformer_Master_Sheet_14: -1815429524
+      Wizard_Platformer_Master_Sheet_6: 1475111172
+      Wizard_Platformer_Master_Sheet_26: -1568714427
+      Wizard_Platformer_Master_Sheet_21: 329190256
+      Wall_Torch_6: -222078469
+      Wall_Torch_1: 1076949694
+      Wizard_Platformer_Master_Sheet_31: -1080083273
+      Wizard_Platformer_Master_Sheet_37: 812649636
+      Wizard_Platformer_Master_Sheet_13: -232966086
+      Wizard_Platformer_Master_Sheet_8: 821825777
+      Wizard_Platformer_Master_Sheet_20: -274392985
+      Wizard_Platformer_Master_Sheet_10: -2083056814
+      Wizard_Platformer_Master_Sheet_24: -1938741551
+      Wall_Torch_2: 199625287
+      Wizard_Platformer_Master_Sheet_16: 1923787460
+      Wizard_Platformer_Master_Sheet_0: 1544475927
+      Wizard_Platformer_Master_Sheet_23: -392343870
+      Wizard_Platformer_Master_Sheet_2: 769963204
+      Wizard_Platformer_Master_Sheet_4: -145865706
+      Wizard_Platformer_Master_Sheet_9: 597630564
+      Wizard_Platformer_Master_Sheet_27: 442984646
+      Wizard_Platformer_Master_Sheet_33: 729492589
+      Wizard_Platformer_Master_Sheet_29: -1398223905
+      Ground_Stone_Bricks: -1398223905
+      Wizard_Platformer_Master_Sheet_18: -1009729203
+      Wall_Torch_5: 1841059504
+      Wizard_Platformer_Master_Sheet_17: -1521080148
+      Wall_Torch_3: -958236438
+      Wall_Torch_8: 173721487
+      Wizard_Platformer_Master_Sheet_35: -520539838
+      Ground_Cobble: -1342870315
+      Wizard_Platformer_Master_Sheet_40: 1698778387
+      Wizard_Platformer_Master_Sheet_34: 757177195
+      Wizard_Platformer_Master_Sheet_39: -52271244
+      Wizard_Platformer_Master_Sheet_19: 78032553
+      Wizard_Platformer_Master_Sheet_25: 1899284602
+      Wizard_Platformer_Master_Sheet_1: 2011533152
+      Door_Right_Closed: 1196373299
+      Wizard_Platformer_Master_Sheet_30: 615924938
+      Wall_Torch_7: 173721487
+      Wizard_Platformer_Master_Sheet_7: 546818985
+      Wizard_Platformer_Master_Sheet_11: 1995685492
+      Background_Cobblestone: 78032553
+      Door_Left_Open: 2101552074
+      Door_Left_Closed: -683710346
+      Wizard_Platformer_Master_Sheet_15: 988529932
+      Wizard_Platformer_Master_Sheet_3: -465610143
+      Wizard_Platformer_Master_Sheet_38: -1200940668
+      Wizard_Platformer_Master_Sheet_41: 1232783092
+      Wizard_Platformer_Master_Sheet_36: -1138834228
+      Wizard_Platformer_Master_Sheet_28: 1960931657
+      Wizard_Platformer_Master_Sheet_5: 366467246
+      Chest_Closed: 173721487
+      Chest_Opened: 1846950345
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

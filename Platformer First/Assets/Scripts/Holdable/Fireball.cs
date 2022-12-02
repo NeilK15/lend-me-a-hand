@@ -21,8 +21,14 @@ public class Fireball : MonoBehaviour
     
     public float Damage
     {
-        get { return _damage; }
-        set { _damage = value; }
+        get
+        {
+            return _damage;
+        }
+        set
+        {
+            _damage = value;
+        }
     }
 
     private bool _shouldFollowMouse;
@@ -102,6 +108,7 @@ public class Fireball : MonoBehaviour
         Collider2D enemy = Physics2D.OverlapCircle(transform.position, radius, enemyLayerMask);
         if (enemy != null)
         {
+            print("Should Work");
             IDamageable damageable = enemy.GetComponent<IDamageable>();
             if (damageable != null)
                 damageable.Damage(_damage);

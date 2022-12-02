@@ -50,19 +50,39 @@ SpriteAtlas:
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: -1342870315, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
-  - {fileID: -1455132543, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
-  - {fileID: 636310101, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: -52271244, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 78032553, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: -1398223905, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: -74000182, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 1698778387, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 1841059504, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 1232783092, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
   - {fileID: 2144157432, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
   - {fileID: 1500335706, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
   - {fileID: -428580357, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: -222078469, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 1846950345, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 1196373299, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: -683710346, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 2101552074, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
+  - {fileID: 173721487, guid: 311639cb3fd92af489a76c980d5ef2c3, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Wizard_Platformer_Master_Sheet_0
-  - Wizard_Platformer_Master_Sheet_5
-  - Ground_Cobble
+  - Wall_Torch_
+  - Background_Cobblestone
+  - Ground_Stone_Bricks
+  - Door_Right_Open
+  - Wall_Torch_5
+  - Wall_Torch_7
+  - Wall_Torch_6
   - Wall_Torch_1
   - Wall_Torch_3
   - Wall_Torch_2
+  - Wall_Torch_8
+  - Chest_Opened
+  - Door_Right_Closed
+  - Door_Left_Closed
+  - Door_Left_Open
+  - Chest_Closed
   m_RenderDataMap: {}
   m_Tag: Sprite Atlas
   m_IsVariant: 0

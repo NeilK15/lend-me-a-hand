@@ -24,9 +24,9 @@ public class Enemy : Character
         _speed = enemy.speed + (2*(float)rand.NextDouble() - 1f);
     }
 
-    private void LateUpdate()
+    private void Update()
     {
-        _timeSinceLastDamage += Time.fixedDeltaTime;
+        _timeSinceLastDamage += Time.deltaTime;
 
         if (Vector2.Distance(transform.position, _player.transform.position) > 0.3f)
             transform.position = Vector2.Lerp(transform.position, _player.transform.position, _speed * Time.deltaTime);
