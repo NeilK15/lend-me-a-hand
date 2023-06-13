@@ -1,13 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour, IDamageable
 {
+
+    private CharacterState _characterState;
+    public CharacterState CharacterState
+    {
+        get
+        {
+            return _characterState;
+        }
+        set
+        {
+            _characterState = value;
+            
+        }
+    }
     
+    [Header("Preferences")]
     public float health = 100;
 
+    [Header("References")]
     public GameObject deathEffect;
+
+    private void Start()
+    {
+        _characterState = CharacterState.Idle;
+    }
+
+
     public virtual void Damage(float damage)
     {
         health -= damage;
@@ -23,4 +47,10 @@ public class Character : MonoBehaviour, IDamageable
 
     }
 
+}
+
+
+public enum CharacterState {
+    Idle,
+    OnFire
 }

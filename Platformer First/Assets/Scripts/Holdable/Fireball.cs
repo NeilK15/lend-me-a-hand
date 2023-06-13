@@ -3,16 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Security.Cryptography;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-    [Header("References")]
-    public new Rigidbody2D rigidbody;
+    
+    [Header("Preferences")]
     public float speed = 4f;
     public float controlSeconds = 3f;
     public float secondsUntilKill = 5f;
     public float radius = 2f;
+    public float secondsBetweenDamage = 0.7f;
+    
+    
+    [Header("References")]
+    public new Rigidbody2D rigidbody;
     public LayerMask groundLayerMask;
     public LayerMask enemyLayerMask;
     public GameObject fireBallExplosion;
@@ -110,15 +116,43 @@ public class Fireball : MonoBehaviour
         {
             print("Should Work");
             IDamageable damageable = enemy.GetComponent<IDamageable>();
-            if (damageable != null)
-                damageable.Damage(_damage);
+            Character character = enemy.GetComponent<Character>();
+            if (damageable != null && !_damaging)
+                StartCoroutine("DoDamage", damageable);
+            else if (!_damaging)
+            {
+                
+                StopCoroutine("DoDamage");
+            }
 
+            if (character != null)
+            {
+                
+            }
         }
+
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.DrawSphere(transform.position, radius);
+    }
+
+    private bool _damaging = false;
+    
+    // Damages a damageable at a certain speed
+    IEnumerator DoDamage(IDamageable damageable)
+    {
+        _damaging = true;
+        
+        // Damage the damageable
+        damageable.Damage(_damage);
+        
+        // Wait a bit
+        yield return new WaitForSeconds(secondsBetweenDamage);
+        
+        _damaging = false;
+
     }
     
 }
